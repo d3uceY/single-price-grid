@@ -142,4 +142,8 @@ button{
     .second-section{
         flex-direction: column;
     }
+
+    body{
+        height: auto;
+    }
 }
