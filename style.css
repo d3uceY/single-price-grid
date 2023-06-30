@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap');
+
+
+:root{
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --grey: rgb(197,216,221);
+    --cyan-2: rgba(75,190,188,255);
+}
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--Grayish-Blue);
+    padding: 20px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container{
+    max-width: 600px;  
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+
+.first-container,
+.second-container,
+.first-inner-container{
+    padding: 30px;
+}
+
+.first-inner-container{
+    background-color: white;
+}
+
+
+.second-section{
+    display: flex;
+}
+
+.second-section > div{
+    flex: 1;
+}
+
+
+.first-inner-container h1{
+    color: var(--Cyan);
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.first-inner-container h2{
+    color: var(--Bright-Yellow);
+    font-size: 17px;
+    line-height: 2;
+}
+
+.first-inner-container p{
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.first-inner-container{
+    background-color: white;
+}
+
+.first-container h2,
+.second-container h2{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.first-container{
+    background: var(--Cyan);
+}
+
+.first-container p{
+   color:white;
+   font-size: 16px;
+}
+
+.price-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.price-container p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.price-container span{
+    color: var(--grey);
+}
+
+button{
+    background: var(--Bright-Yellow);
+    color: white;
+    padding: 15px;
+    width:100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.second-container{
+    background: var(--cyan-2);
+}
+
+.second-container p{
+    color: var(--grey);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+
+@media screen and (max-width: 561px){
+    .second-section{
+        flex-direction: column;
+    }
+}
